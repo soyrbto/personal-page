@@ -2,7 +2,8 @@
   button {
     font-family: "Poppins";
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
     border-radius: 43px;
     border: none;
     color: white;
