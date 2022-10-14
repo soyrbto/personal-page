@@ -1,5 +1,5 @@
 .header {
-  @media only screen and (min-width: var(--table-big)) {
+  @media only screen and (min-width: $tablet-big) {
     & {
       border-bottom: 2px solid var(--grey-medium);
     }
@@ -10,7 +10,7 @@
     border-left: 2px solid var(--grey-medium);
     border-bottom: 2px solid var(--grey-medium);
 
-    @media only screen and (min-width: var(--table-big)) {
+    @media only screen and (min-width: $tablet-big) {
       & {
         grid-column: 1 / span 2;
         border-bottom: none;
@@ -28,20 +28,20 @@
     justify-content: space-between;
     justify-self: flex-end;
 
-    @media only screen and (min-width: var(--mobile-medium)) {
-      & {
-        font-size: 0.75rem;
-        font-size: clamp(0.75rem, 0.57rem + 0.9vw, 1rem);
-      }
-    }
-
-    @media only screen and (min-width: var(--table-big)) {
+    @media only screen and (min-width: $tablet-small) {
       & {
         grid-column: 5 / 9;
         border-bottom: none;
         border-right: none;
         justify-self: end;
         padding-right: 0;
+      }
+    }
+
+    @media only screen and (min-width: $mobile-medium) {
+      & {
+        font-size: 0.75rem;
+        font-size: clamp(0.75rem, 0.57rem + 0.9vw, 1rem);
       }
     }
 

@@ -1,18 +1,14 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 :root {
   //COLORS
   --grey-medium: #615f5f;
   --pink-light: #fefbf0;
 
   //SCREEN SIZES // --DEVICE-TYPE: SCREEN-SIZE-AND-UP px;
-  --mobile-medium: 360px;
-  --tablet-small: 600px;
-  --tablet-big: 768px;
-  --desktop-big: 1280px;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
 }
 
 *,
@@ -53,7 +49,7 @@ h1 {
   font-size: 1.875rem;
   font-size: clamp(1.875rem, -1.125rem + 15vw, 2.25rem);
 
-  @media only screen and (min-width: var(--mobile-medium)) {
+  @media only screen and (min-width: $mobile-medium) {
     & {
       font-size: 2.25rem;
       font-size: clamp(2.25rem, 2.07rem + 0.9vw, 2.5rem);

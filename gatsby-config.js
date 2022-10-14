@@ -7,7 +7,12 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        additionalData: `@import "${__dirname}/src/styles/variables";`,
+      },
+    },
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

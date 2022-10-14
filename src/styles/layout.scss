@@ -9,7 +9,7 @@
     }
   }
 
-  @media only screen and (min-width: var(--desktop-big)) {
+  @media only screen and (min-width: $desktop-big) {
     & {
       grid-template-columns: repeat(12, 1fr);
     }
@@ -21,20 +21,17 @@
   background-color: var(--pink-light);
   min-height: 100vh;
 
-  @media only screen and (min-width: var(--mobile-medium)) {
+  @media only screen and (min-width: $mobile-medium) {
     & {
       padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem)
         clamp(0.625rem, 0.07rem + 2.45vw, 1.25rem);
     }
   }
 
-  @media only screen and (min-width: var(--tablet-big)) {
+  @media only screen and (min-width: $tablet-big) {
     & {
       padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem)
         clamp(2rem, -9.06rem + 23.05vw, 9.375rem);
     }
   }
-
-  // main {
-  // }
 }
