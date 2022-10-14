@@ -154,6 +154,7 @@
         & {
           font-size: 2rem;
           font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
+          padding: 0 17px;
         }
       }
     }
