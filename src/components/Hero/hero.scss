@@ -15,7 +15,7 @@
     @media only screen and (min-width: $desktop-big) {
       & {
         margin-left: 0;
-        margin-bottom: 29px;
+        margin-bottom: 20px;
         grid-column: 2 / span 6;
         align-self: end;
       }
@@ -58,10 +58,10 @@
 
     @media only screen and (min-width: $desktop-big) {
       & {
-        grid-column: 8 / -1;
+        grid-column: 8 / span 5;
         grid-row: 1 / span 3;
-        justify-self: start;
-        align-self: center;
+        justify-self: stretch;
+        align-self: stretch;
         margin: 0;
       }
     }
@@ -98,7 +98,7 @@
       }
 
       &::after {
-        height: 32px;
+        height: 120px;
         display: block;
         position: absolute;
         bottom: 0px;
@@ -149,6 +149,13 @@
       line-height: 120%;
       letter-spacing: 0.1em;
       text-align: center;
+
+      @media only screen and (min-width: $tablet-big) {
+        & {
+          font-size: 2rem;
+          font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
+        }
+      }
     }
   }
 }

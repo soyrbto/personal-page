@@ -18,6 +18,15 @@
         border-bottom: none;
       }
     }
+
+    @media only screen and (min-width: $desktop-big) {
+      & {
+        margin-left: 0;
+        grid-row: 1 / span 1;
+        grid-column: 1 / -1;
+        justify-self: start;
+      }
+    }
   }
 
   .navbar {
@@ -75,6 +84,19 @@
       & {
         font-size: 1rem;
         font-size: clamp(1rem, 0.78rem + 0.59vw, 1.25rem);
+      }
+    }
+
+    @media only screen and (min-width: $desktop-big) {
+      & {
+        margin-left: 0;
+        grid-row: 1 / span 1;
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+
+      &::after {
+        height: 75px;
       }
     }
 
