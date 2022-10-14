@@ -1,0 +1,107 @@
+.hero {
+  padding: 44px 0px;
+
+  .title {
+    grid-column: span 4;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width: var(--tablet-big)) {
+      & {
+        margin-left: clamp(0rem, -16.97rem + 35.35vw, 11.3rem);
+        grid-column: 2 / -1;
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
+    grid-column: span 4;
+    line-height: 160%;
+
+    @media only screen and (min-width: var(--tablet-big)) {
+      & {
+        margin-left: clamp(0rem, -16.97rem + 35.35vw, 11.3rem);
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  .hero-image {
+    width: clamp(17.75rem, -2.25rem + 100vw, 20.25rem);
+    grid-column: 1 / -1;
+    margin-top: 36px;
+    margin-bottom: 19px;
+    justify-self: center;
+
+    @media only screen and (min-width: var(--tablet-big)) {
+      & {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  .contact-box {
+    border-left: 2px solid var(--grey-medium);
+    font-style: italic;
+    grid-column: 1 / -1;
+    padding: 17px 23px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and (min-width: var(--mobile-medium)) {
+      & {
+        padding: 17px clamp(0.75rem, -2.2rem + 14.73vw, 4.875rem);
+      }
+    }
+
+    @media only screen and (min-width: var(--tablet-big)) {
+      & {
+        padding: 17px clamp(0.75rem, -2.2rem + 14.73vw, 4.875rem);
+      }
+    }
+
+    .no-commitment {
+      margin-top: 18px;
+      text-align: center;
+      font-family: "Josefin Sans";
+      font-weight: 500;
+      font-size: 0.75rem;
+      font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
+      line-height: 160%;
+    }
+  }
+
+  .section-quote {
+    grid-column: 1 / -1;
+
+    .border {
+      width: 100%;
+      grid-column: 1 / -1;
+      height: 52px;
+    }
+
+    .left {
+      border-top: 2px solid var(--grey-medium);
+      border-left: 2px solid var(--grey-medium);
+    }
+    .right {
+      border-bottom: 2px solid var(--grey-medium);
+      border-right: 2px solid var(--grey-medium);
+    }
+
+    .quote {
+      display: flex;
+      justify-content: center;
+      padding: 0px clamp(0.5rem, -5.88rem + 31.92vw, 9.4375rem);
+      quotes: none;
+      font-family: "josefin slab", serif;
+      font-size: 1.25rem;
+      font-size: clamp(1.25rem, -0.75rem + 10vw, 1.5rem);
+      line-height: 120%;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+}
