@@ -20,7 +20,7 @@ export default function Hero() {
         className="hero-image"
       />
       <div className="contact-box">
-        <Button />
+        <Button>Agenda una asesoria</Button>
         <div className="no-commitment">
           *Sin compromiso, agenda un dia disponibles para videollamada y
           hablemos de tu idea.

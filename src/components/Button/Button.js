@@ -1,10 +1,10 @@
 import React from "react"
 import "./button.scss"
 
-export default function Button() {
+export default function Button(props) {
   return (
     <div className="Button">
-      <button>Agenda una asesoria</button>
+      <button>{props.children}</button>
     </div>
   )
 }

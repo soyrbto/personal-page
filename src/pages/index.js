@@ -4,6 +4,7 @@ import "../styles/global.scss"
 import Header from "../components/Header/Header"
 import Hero from "../components/Hero/Hero"
 import Service from "../components/Services/Service"
+import Button from "../components/Button/Button"
 
 const services = [
   {
@@ -43,6 +44,16 @@ export default function Home() {
           {services.map(service => {
             return <Service services={service} key={service.title} />
           })}
+        </section>
+        <section className="section-contact grid">
+          <img src="./images/profile.png" alt="Soy Roberto" />
+          <p className="section-content">
+            Estoy a un click de distancia, aunque tambien puedes contactarme por
+            instagram
+          </p>
+          <div className="button">
+            <Button>Agenda un asesoria</Button>
+          </div>
         </section>
       </main>
     </div>
