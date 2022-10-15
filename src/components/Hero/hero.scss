@@ -1,5 +1,6 @@
 .hero {
-  padding: 44px 0px;
+  padding: 44px $padding-horizontal-1;
+  position: relative;
 
   .title {
     grid-column: span 4;
@@ -68,7 +69,6 @@
   }
 
   .contact-box {
-    position: relative;
     border-left: 2px solid var(--grey-medium);
     font-style: italic;
     grid-column: 1 / -1;
@@ -93,15 +93,16 @@
       & {
         border-left: none;
         padding-top: 84px;
-        grid-column: 1 / span 6;
+        padding-left: 0;
+        grid-column: 2 / span 6;
         align-items: flex-start;
       }
 
       &::after {
-        height: 120px;
+        height: 150px;
         display: block;
         position: absolute;
-        bottom: 0px;
+        bottom: 28%;
         left: 0px;
         width: 2px;
         background: var(--grey-medium);
@@ -153,8 +154,9 @@
       @media only screen and (min-width: $tablet-big) {
         & {
           font-size: 2rem;
-          font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
-          padding: 0 17px;
+          // font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
+          font-size: 36px;
+          padding: 0 200px;
         }
       }
     }

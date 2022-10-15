@@ -1,0 +1,13 @@
+.service-item {
+  .title {
+    grid-column: 1 / span 3;
+    color: white;
+  }
+
+  .content {
+    font-size: 10px;
+    line-height: 160%;
+    color: white;
+    grid-column: 1 / span 3;
+  }
+}

@@ -2,3 +2,7 @@ $mobile-medium: 360px;
 $tablet-small: 600px;
 $tablet-big: 768px;
 $desktop-big: 1280px;
+
+$padding-horizontal-1: 18px;
+$padding-horizontal-2: clamp(0.625rem, 0.07rem + 2.45vw, 1.25rem);
+$padding-horizontal-3: clamp(2rem, -9.06rem + 23.05vw, 9.375rem);
