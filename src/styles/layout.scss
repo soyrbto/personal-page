@@ -22,14 +22,14 @@
 
   @media only screen and (min-width: $mobile-medium) {
     & {
-      padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem) 0;
+      padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem) 0 0;
     }
   }
 }
 
 .services {
   padding: 0 $padding-horizontal-1;
-  padding-top: 54px;
+  padding-top: 34px;
   background-color: var(--grey-dark);
 
   @media only screen and (min-width: $mobile-medium) {
