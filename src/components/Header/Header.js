@@ -10,9 +10,15 @@ export default function Header() {
       </div>
       <nav className="navbar">
         <ul>
-          <li>Conóceme</li>
-          <li>Mis Servicios</li>
-          <li>Contacto</li>
+          <a href="#conoceme">
+            <li>Conóceme</li>
+          </a>
+          <a href="#services">
+            <li>Mis Servicios</li>
+          </a>
+          <a href="#contact">
+            <li>Contacto</li>
+          </a>
         </ul>
       </nav>
     </header>

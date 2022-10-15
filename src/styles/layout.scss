@@ -100,9 +100,10 @@
   }
 
   .section-subscribe {
-    padding: 0 $padding-horizontal-1 38px $padding-horizontal-1;
+    // padding: 0 $padding-horizontal-1 38px $padding-horizontal-1;
 
     h2 {
+      margin-bottom: 32px;
       grid-column: 1 /-1;
       justify-self: center;
       text-align: center;

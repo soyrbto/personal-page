@@ -1,0 +1,24 @@
+.subscribe-form {
+  padding: 35px $padding-horizontal-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  background-color: var(--grey-dark);
+  align-items: center;
+  gap: 18px;
+
+  input {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  label {
+    font-size: 14px;
+    color: white;
+    font-family: "josefin sans", sans-serif;
+    align-self: flex-start;
+  }
+}

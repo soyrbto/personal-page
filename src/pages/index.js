@@ -5,6 +5,7 @@ import Header from "../components/Header/Header"
 import Hero from "../components/Hero/Hero"
 import Service from "../components/Services/Service"
 import Button from "../components/Button/Button"
+import Form from "../components/Form/Form"
 
 const services = [
   {
@@ -39,13 +40,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <section className="services">
+        <section className="services" id="services">
           <h2 className="section-title">Algunas ideas para empezar</h2>
           {services.map(service => {
             return <Service services={service} key={service.title} />
           })}
         </section>
-        <section className="section-contact grid">
+        <section className="section-contact grid" id="contact">
           <img src="./images/profile.png" alt="Soy Roberto" />
           <p className="section-content">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
@@ -60,7 +61,9 @@ export default function Home() {
             Suscribete <br />
             (promociones y novedades)
           </h2>
+          <Form></Form>
         </section>
+
       </main>
     </div>
   )
