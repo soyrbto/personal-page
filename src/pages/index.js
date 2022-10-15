@@ -55,6 +55,12 @@ export default function Home() {
             <Button>Agenda un asesoria</Button>
           </div>
         </section>
+        <section className="section-subscribe grid">
+          <h2>
+            Suscribete <br />
+            (promociones y novedades)
+          </h2>
+        </section>
       </main>
     </div>
   )
