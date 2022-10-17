@@ -130,7 +130,7 @@
       top: 42.5%;
       height: 2px;
       width: 67.5vw;
-      width: calc(100% - 22px);
+      width: calc(100% - (57px / 2) + 4px + 1px);
       background-color: var(--grey-dark);
     }
 
