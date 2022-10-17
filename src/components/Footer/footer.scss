@@ -1,0 +1,24 @@
+footer {
+  padding: 16px $padding-horizontal-1;
+  background-color: var(--grey-dark);
+  height: auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+      color: white;
+      line-height: 160%;
+      
+      img {
+        margin-right: 9px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

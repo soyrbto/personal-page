@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero"
 import Service from "../components/Services/Service"
 import Button from "../components/Button/Button"
 import Form from "../components/Form/Form"
+import Footer from "../components/Footer/Footer"
 
 const services = [
   {
@@ -70,6 +71,7 @@ export default function Home() {
           </a>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }
