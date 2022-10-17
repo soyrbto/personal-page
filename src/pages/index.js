@@ -63,7 +63,12 @@ export default function Home() {
           </h2>
           <Form></Form>
         </section>
-
+        <section className="go-top grid">
+          <a href="#header">
+            <img src="./images/go-top.svg" alt="" />
+            <p>Ir arriba</p>
+          </a>
+        </section>
       </main>
     </div>
   )
