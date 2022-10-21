@@ -100,6 +100,7 @@ p {
 }
 
 .title-read {
+  font-family: "poppins", sans-serif;
   color: white;
   font-size: var(--fs-l);
 }
@@ -110,4 +111,16 @@ p {
   font-size: var(--fs-xl);
   line-height: 120%;
   letter-spacing: 0.1em;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.small {
+  font-size: var(--fs-s);
+}
+
+.italic {
+  font-style: italic;
 }

@@ -13,7 +13,10 @@ module.exports = {
         includePaths: [`${__dirname}/src/styles/main.scss`],
       },
       options: {
-        additionalData: `@import "${__dirname}/src/styles/variables";`,
+        additionalData: `
+        @import "${__dirname}/src/styles/variables";
+        @import "${__dirname}/src/styles/mixins";
+        `,
       },
     },
     {

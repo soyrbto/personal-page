@@ -1,16 +1,18 @@
 .service-item {
   margin-top: 35px;
   .title {
-    grid-column: 1 / span 3;
+    grid-column: 1 / -1;
   }
 
   .content {
-    grid-column: 1 / span 3;
+    grid-column: 1 / -2;
     padding-bottom: 18px;
     border-bottom: 2px solid var(--grey-medium);
   }
 
   img {
-    justify-self: end;
+    grid-row: 1 / span 2;
+    grid-column: -1 / span 2;
+    align-self: center;
   }
 }

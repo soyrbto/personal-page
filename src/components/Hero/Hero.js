@@ -20,15 +20,15 @@ export default function Hero() {
         className="hero-image"
       />
       <div className="contact-box">
-        <Button>Agenda una asesoria</Button>
-        <div className="no-commitment notification">
+        <Button style={"full-span align-center"}>Agenda una asesoria</Button>
+        <div className="no-commitment notification t-center italic">
           *Sin compromiso, agenda un dia disponibles para videollamada y
           hablemos de tu idea.
         </div>
       </div>
       <section className="section-quote">
         <div className="border left" />
-        <q className="quote">
+        <q className="quote title-display t-center">
           Seguramente ya sabes que quieres, solo falta hacerlo realidad
         </q>
         <div className="border right" />
