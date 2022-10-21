@@ -2,13 +2,9 @@
   margin-top: 35px;
   .title {
     grid-column: 1 / span 3;
-    color: white;
   }
 
   .content {
-    font-size: 10px;
-    line-height: 160%;
-    color: white;
     grid-column: 1 / span 3;
     padding-bottom: 18px;
     border-bottom: 2px solid var(--grey-medium);

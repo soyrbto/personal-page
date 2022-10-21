@@ -5,10 +5,10 @@ import Button from "../Button/Button"
 export default function Form() {
   return (
     <form className="subscribe-form">
-      <label>Nombre</label>
-      <input type="text" placeholder="Nombre" aria-label="name" />
-      <label>Correo</label>
-      <input type="text" placeholder="Email" aria-label="email" />
+      <label htmlFor="name">Nombre</label>
+      <input type="text" placeholder="Nombre" id="name" />
+      <label htmlFor="email">Correo</label>
+      <input type="text" placeholder="Email" id="email" />
       <Button className="button">Subscribete</Button>
     </form>
   )

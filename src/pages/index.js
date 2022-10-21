@@ -1,6 +1,5 @@
 import React from "react"
-import "../styles/layout.scss"
-import "../styles/global.scss"
+import "../styles/main.scss"
 import Header from "../components/Header/Header"
 import Hero from "../components/Hero/Hero"
 import Service from "../components/Services/Service"
@@ -42,7 +41,9 @@ export default function Home() {
       <main>
         <Hero />
         <section className="services" id="services">
-          <h2 className="section-title">Algunas ideas para empezar</h2>
+          <h2 className="section-title title-display">
+            Algunas ideas para empezar
+          </h2>
           {services.map(service => {
             return <Service services={service} key={service.title} />
           })}
@@ -58,7 +59,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section-subscribe grid">
-          <h2>
+          <h2 className="title-display">
             Suscribete <br />
             (promociones y novedades)
           </h2>

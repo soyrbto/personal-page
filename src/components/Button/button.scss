@@ -1,12 +1,7 @@
 .Button {
   button {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 0.75rem;
-    font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
     border-radius: 43px;
     border: none;
-    color: white;
     padding: 12px 40px;
     background: linear-gradient(92.34deg, #ed4c5c 5.25%, #fab01c 95.46%);
   }

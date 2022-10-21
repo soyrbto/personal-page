@@ -21,7 +21,7 @@ export default function Hero() {
       />
       <div className="contact-box">
         <Button>Agenda una asesoria</Button>
-        <div className="no-commitment">
+        <div className="no-commitment notification">
           *Sin compromiso, agenda un dia disponibles para videollamada y
           hablemos de tu idea.
         </div>

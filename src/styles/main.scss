@@ -1,3 +1,7 @@
+@import "./variables";
+@import "./layout";
+@import "./typography";
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -50,31 +54,9 @@ a {
 
 // typography styles
 
-h1 {
-  font-family: "Josefin Slab", serif;
-  font-size: 1.875rem;
-  font-size: clamp(1.875rem, -1.125rem + 15vw, 2.25rem);
-
-  @media only screen and (min-width: $mobile-medium) {
-    & {
-      font-size: 2.25rem;
-      font-size: clamp(2.25rem, 2.07rem + 0.9vw, 2.5rem);
-    }
-  }
-}
-
-h2 {
-  font-family: "josefin slab", serif;
-}
-
 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 14px;
-}
-
-p {
-  font-family: "Josefin sans", sans-serif;
-  font-size: 12px;
 }

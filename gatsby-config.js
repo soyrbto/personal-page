@@ -9,6 +9,9 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-plugin-sass",
+      sassOptions: {
+        includePaths: [`${__dirname}/src/styles/main.scss`],
+      },
       options: {
         additionalData: `@import "${__dirname}/src/styles/variables";`,
       },

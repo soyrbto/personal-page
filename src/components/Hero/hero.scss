@@ -24,10 +24,7 @@
   }
 
   .subtitle {
-    font-size: 0.75rem;
-    font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
     grid-column: span 4;
-    line-height: 160%;
 
     @media only screen and (min-width: $tablet-big) {
       & {
@@ -113,11 +110,6 @@
     .no-commitment {
       max-width: 549px;
       margin-top: 18px;
-      font-family: "Josefin Sans";
-      font-weight: 500;
-      font-size: 0.75rem;
-      font-size: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
-      line-height: 160%;
     }
   }
 

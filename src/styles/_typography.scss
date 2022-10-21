@@ -1,0 +1,113 @@
+// between 320px and 360 px width
+:root {
+  // 10px - 12px
+  --fs-xs: clamp(0.625rem, -0.375rem + 5vw, 0.75rem);
+  // 12px - 14px
+  --fs-s: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
+  // 14px - 16px
+  --fs-m: clamp(0.875rem, -0.125rem + 5vw, 1rem);
+  // 18px - 20px
+  --fs-l: clamp(1.125rem, 0.125rem + 5vw, 1.25rem);
+  // 20px - 24px
+  --fs-xl: clamp(1.25rem, -0.75rem + 10vw, 1.5rem);
+  // 30px - 36px
+  --fs-display: clamp(1.875rem, -1.125rem + 15vw, 2.25rem);
+}
+
+// between 360px and 600 px width
+@media only screen and (min-width: $mobile-medium) {
+  :root {
+    // 12px - 16px
+    --fs-xs: clamp(0.75rem, 0.38rem + 1.67vw, 1rem);
+    // 14px - 16px
+    --fs-s: clamp(0.875rem, 0.69rem + 0.05vw, 1rem);
+    // 20px - 36px
+    --fs-m: clamp(1.25rem, -0.25rem + 6.67vw, 2.25rem);
+    // 24px - 32px
+    --fs-l: clamp(1.5rem, 0.75rem + 3.33vw, 2rem);
+    // 36px - 40px
+    --fs-display: clamp(2.25rem, 1.88rem + 1.67vw, 2.5rem);
+  }
+}
+
+// between 601px and 1279 px width
+
+@media only screen and (min-width: $tablet-small) {
+  :root {
+    // 16px - 20px
+    --fs-xs: clamp(1rem, 0.78rem + 0.59vw, 1.25rem);
+    // 18px - 22px
+    --fs-s: clamp(1.125rem, 0.9rem + 0.59vw, 1.375rem);
+    // 20px - 32px
+    --fs-m: clamp(1.25rem, 0.59rem + 1.7vw, 2rem);
+    // 36px - 40px
+    --fs-l: clamp(2.25rem, 2.03rem + 0.59vw, 2.5rem);
+    // 32px - 48px
+    --fs-xl: clamp(2rem, 1.12rem + 2.35vw, 3rem);
+    // 40px - 54px
+    --fs-display: clamp(2.5rem, 1.73rem + 2.06vw, 3.375rem);
+  }
+}
+
+@media only screen and (min-width: $desktop-big) {
+  :root {
+    // 20px - 20px
+    --fs-xs: 1.25rem;
+    // 22px - 22px
+    --fs-s: 1.375px;
+    // 32px - 36px
+    --fs-m: clamp(2rem, 1.78rem + 0.59vw, 2.25rem);
+    // 40px - 48px
+    --fs-l: clamp(2.5rem, 2.0588235294117645rem + 1.1764705882352942vw, 3rem);
+    // 48px - 48px
+    --fs-xl: 3rem;
+    // 54px - 64px
+    --fs-display: clamp(3.375rem, 2.82rem + 1.47vw, 4rem);
+  }
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: var(--fs-display);
+}
+
+.subtitle {
+  font-size: var(--fs-xs);
+  line-height: 160%;
+  color: black;
+}
+
+.title-read-small {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: var(--fs-s);
+  color: white;
+}
+
+.notification {
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 0.75rem;
+  font-size: var(--fs-s);
+  line-height: 160%;
+}
+
+p {
+  font-family: "josefin sans", sans-serif;
+  font-size: var(--fs-xs);
+  line-height: 160%;
+  color: white;
+}
+
+.title-read {
+  color: white;
+  font-size: var(--fs-l);
+}
+
+.title-display {
+  font-family: "josefin slab", serif;
+  font-size: 1.25rem;
+  font-size: var(--fs-xl);
+  line-height: 120%;
+  letter-spacing: 0.1em;
+}
