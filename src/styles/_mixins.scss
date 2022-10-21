@@ -6,7 +6,7 @@
     right: 0;
     bottom: -20%;
     z-index: 100;
-    width: 2px;
+    width: var(--line-width);
     background-color: var(--grey-medium);
     height: 100%;
   }
@@ -17,7 +17,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 2px;
+    height: var(--line-width);
     background-color: var(--grey-medium);
     width: 100%;
   }
@@ -29,7 +29,7 @@
     position: absolute;
     right: 0;
     top: 42.5%;
-    height: 2px;
+    height: var(--line-width);
     width: 15.5%;
     background-color: var(--grey-dark);
   }
@@ -40,9 +40,33 @@
     position: absolute;
     left: 0;
     top: 42.5%;
-    height: 2px;
+    height: var(--line-width);
     width: 67.5vw;
     width: calc(100% - (57px / 2) + 4px + 1px);
+    background-color: var(--grey-dark);
+  }
+}
+
+@mixin horizontal-lines {
+  &::after {
+    grid-column: -2 / -1;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: var(--line-width);
+    width: calc(100% - 28.5px + 5px);
+    background-color: var(--grey-dark);
+  }
+
+  &::before {
+    grid-column: 1 / -2;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: var(--line-width);
+    width: calc(100% - 28.5px + 6px);
     background-color: var(--grey-dark);
   }
 }

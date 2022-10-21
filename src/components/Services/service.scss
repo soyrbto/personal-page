@@ -7,7 +7,7 @@
   .content {
     grid-column: 1 / -2;
     padding-bottom: 18px;
-    border-bottom: 2px solid var(--grey-medium);
+    border-bottom: var(--line-width) solid var(--grey-medium);
   }
 
   img {

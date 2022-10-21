@@ -1,8 +1,18 @@
 .Button {
+  grid-column: 1 / -1;
+  justify-self: center;
+
   button {
     border-radius: 43px;
     border: none;
     padding: 12px 40px;
     background: linear-gradient(92.34deg, #ed4c5c 5.25%, #fab01c 95.46%);
+  }
+
+  @media only screen and (min-width: $desktop-big) {
+    & {
+      justify-self: start;
+      grid-column: 2 / -1;
+    }
   }
 }

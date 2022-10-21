@@ -3,8 +3,10 @@ import "./button.scss"
 
 export default function Button(props) {
   return (
-    <div className={`Button ${props.style}`}>
-      <button className={`title-read-small `}>{props.children}</button>
+    <div className="Button">
+      <button className={`title-read-small ${props.styles}`}>
+        {props.children}
+      </button>
     </div>
   )
 }

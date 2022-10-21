@@ -19,8 +19,8 @@ export default function Hero() {
         alt="Person thinking in web ideas"
         className="hero-image"
       />
-      <div className="contact-box">
-        <Button style={"full-span align-center"}>Agenda una asesoria</Button>
+      <div className="contact-box grid">
+        <Button>Agenda una asesoria</Button>
         <div className="no-commitment notification t-center italic">
           *Sin compromiso, agenda un dia disponibles para videollamada y
           hablemos de tu idea.

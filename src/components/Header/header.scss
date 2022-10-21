@@ -1,5 +1,5 @@
 .Header {
-  margin: 0 $padding-horizontal-1;
+  margin: 0 var(--padding-horizontal);
   position: relative;
 
   &::after {
@@ -8,14 +8,14 @@
     position: absolute;
     bottom: 45%;
     left: 0px;
-    width: 2px;
+    width: var(--line-width);
     background: var(--grey-medium);
     content: "";
   }
 
   @media only screen and (min-width: $tablet-small) {
     & {
-      border-bottom: 2px solid var(--grey-medium);
+      border-bottom: var(--line-width) solid var(--grey-medium);
     }
 
     &::after {
@@ -58,7 +58,7 @@
       bottom: 45%;
       left: 0px;
       right: 0px;
-      height: 2px;
+      height: var(--line-width);
       background: var(--grey-medium);
       content: "";
     }
@@ -113,7 +113,7 @@
       position: absolute;
       top: 55%;
       right: 0px;
-      width: 2px;
+      width: var(--line-width);
       background: var(--grey-medium);
       content: "";
     }
@@ -142,7 +142,7 @@
         position: absolute;
         top: 100%;
         right: 0px;
-        width: 2px;
+        width: var(--line-width);
         background: var(--grey-medium);
         content: "";
       }

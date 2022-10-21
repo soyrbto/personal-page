@@ -7,7 +7,7 @@
 //TYPOGRAPHY
 
 .title-display {
-  color: green;
+  color: white;
 }
 
 .section-contact {
@@ -19,5 +19,17 @@
 }
 
 p {
-  color: green;
+  color: white;
+}
+
+// DECORATIONS
+
+:root {
+  --line-width: 2px;
+}
+
+@media only screen and (min-width: $desktop-big) {
+  :root {
+    --line-width: 4px;
+  }
 }

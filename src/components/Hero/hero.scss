@@ -1,5 +1,5 @@
 .hero {
-  padding: 44px $padding-horizontal-1;
+  padding: 44px var(--padding-horizontal);
   position: relative;
 
   .title {
@@ -15,9 +15,10 @@
 
     @media only screen and (min-width: $desktop-big) {
       & {
+        margin-top: 92px;
         margin-left: 0;
         margin-bottom: 20px;
-        grid-column: 2 / span 6;
+        grid-column: 1 / span 7;
         align-self: end;
       }
     }
@@ -36,7 +37,8 @@
     @media only screen and (min-width: $desktop-big) {
       & {
         margin: 0;
-        grid-column: 2 / span 6;
+        margin-bottom: 80px;
+        grid-column: 1 / span 6;
       }
     }
   }
@@ -58,7 +60,6 @@
       & {
         grid-column: 8 / span 5;
         grid-row: 1 / span 3;
-        justify-self: stretch;
         align-self: stretch;
         margin: 0;
       }
@@ -66,35 +67,48 @@
   }
 
   .contact-box {
-    border-left: 2px solid var(--grey-medium);
     grid-column: 1 / -1;
-    padding: 17px 23px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
-    @media only screen and (min-width: $mobile-medium) {
-      & {
-        padding: 17px clamp(0.75rem, -2.2rem + 14.73vw, 4.875rem);
-      }
+    .no-commitment {
+      grid-column: 1 / -1;
+      margin: 0 23px;
+      text-align: center;
     }
 
-    @media only screen and (min-width: $tablet-big) {
-      & {
-        padding: 17px clamp(0.75rem, -2.2rem + 14.73vw, 4.875rem);
-      }
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: " ";
+      width: var(--line-width);
+      height: 100%;
+      background-color: var(--grey-medium);
     }
 
     @media only screen and (min-width: $desktop-big) {
-      @include horizontal-left-lines;
+      & {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+      }
     }
 
     .no-commitment {
       max-width: 549px;
       margin-top: 18px;
+
+      @media only screen and (min-width: $desktop-big) {
+        & {
+          grid-column: 2 /-1;
+          text-align: left;
+          margin-bottom: 56px;
+        }
+      }
     }
   }
 
   .section-quote {
+    text-align: center;
     grid-column: 1 / -1;
 
     .border {
@@ -104,15 +118,16 @@
     }
 
     .left {
-      border-top: 2px solid var(--grey-medium);
-      border-left: 2px solid var(--grey-medium);
+      border-top: var(--line-width) solid var(--grey-medium);
+      border-left: var(--line-width) solid var(--grey-medium);
     }
     .right {
-      border-bottom: 2px solid var(--grey-medium);
-      border-right: 2px solid var(--grey-medium);
+      border-bottom: var(--line-width) solid var(--grey-medium);
+      border-right: var(--line-width) solid var(--grey-medium);
     }
 
     .quote {
+      color: black;
       display: flex;
       justify-content: center;
       padding: 0px clamp(0.5rem, -5.88rem + 31.92vw, 9.4375rem);
@@ -122,7 +137,6 @@
           font-size: 2rem;
           // font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
           font-size: 36px;
-          padding: 0 200px;
         }
       }
     }

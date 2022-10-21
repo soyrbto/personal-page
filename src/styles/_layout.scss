@@ -1,3 +1,19 @@
+:root {
+  --padding-horizontal: 19px;
+}
+
+@media only screen and (min-width: $mobile-medium) {
+  :root {
+    --padding-horizontal: clamp(19px, 5.41vw, 32.5px);
+  }
+}
+
+@media only screen and (min-width: $desktop-big) {
+  :root {
+    --padding-horizontal: clamp(32.5px, 11.88vw, 152px);
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -33,26 +49,14 @@
   }
 
   .services {
-    padding: 0 $padding-horizontal-1;
+    padding-inline: var(--padding-horizontal);
     padding-top: 34px;
     background-color: var(--grey-dark);
-
-    @media only screen and (min-width: $mobile-medium) {
-      & {
-        padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem) $padding-horizontal-2;
-      }
-    }
-
-    @media only screen and (min-width: $tablet-big) {
-      & {
-        padding: clamp(1.125rem, 0.35rem + 3.43vw, 2rem) 0;
-      }
-    }
   }
 
   .section-contact {
     padding: 40px 0;
-    margin: 0 $padding-horizontal-1;
+    margin: 0 var(--padding-horizontal);
     position: relative;
     margin-bottom: 38px;
 
@@ -75,29 +79,28 @@
   }
 
   .section-subscribe > * {
+    color: var(--grey-dark);
     grid-column: 1 / -1;
     margin-bottom: 51px;
+    text-align: center;
   }
 
   .go-top {
+    height: 150px;
     position: relative;
 
-    @include horizontal-left-lines;
-
     a {
-      grid-column: 3 / 5;
+      grid-column: -3 / span 2;
+      grid-row: 1 / span 1;
       justify-self: center;
-      margin-top: 39px;
       justify-content: center;
+      align-self: center;
+
+      @include horizontal-lines;
 
       img {
         margin: 0 auto;
         display: flex;
-      }
-
-      p {
-        grid-column: 3 / -1;
-        margin-bottom: 24px;
       }
     }
   }

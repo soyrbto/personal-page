@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section-subscribe grid">
-          <h2 className="title-display t-center">
+          <h2 className="title-display">
             Suscribete <br />
             (promociones y novedades)
           </h2>
@@ -68,7 +68,7 @@ export default function Home() {
         <section className="go-top grid">
           <a href="#header">
             <img src="./images/go-top.svg" alt="" />
-            <p>Ir arriba</p>
+            {/* <p>Ir arriba</p> */}
           </a>
         </section>
       </main>
