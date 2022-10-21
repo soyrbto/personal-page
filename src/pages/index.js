@@ -50,7 +50,7 @@ export default function Home() {
         </section>
         <section className="section-contact grid" id="contact">
           <img src="./images/profile.png" alt="Soy Roberto" />
-          <p className="section-content title-display t-center small">
+          <p className="section-content title-display">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
             instagram
           </p>
