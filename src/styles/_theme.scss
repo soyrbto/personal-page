@@ -1,25 +1,18 @@
-// lAYOUT
-
-.Home {
-  background-color: var(--pink-light);
+:root {
+  //COLORS
+  --grey-medium: #615f5f;
+  --grey-dark: #3e4347;
+  --pink-light: #fefbf0;
 }
 
-//TYPOGRAPHY
+//utility colors
 
-.title-display {
+.c-white {
   color: white;
 }
 
-.section-contact {
-  color: white;
-}
-
-.section-content {
+.c-black {
   color: black;
-}
-
-p {
-  color: white;
 }
 
 // DECORATIONS

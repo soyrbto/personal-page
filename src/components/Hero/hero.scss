@@ -72,6 +72,7 @@
     position: relative;
 
     .no-commitment {
+      padding-inline: var(--padding-inline-display);
       grid-column: 1 / -1;
       text-align: center;
     }
@@ -94,7 +95,6 @@
     }
 
     .no-commitment {
-      max-width: 549px;
       margin-top: 18px;
 
       @media only screen and (min-width: $desktop-big) {
@@ -127,11 +127,11 @@
     }
 
     .quote {
+      quotes: none;
       color: black;
       display: flex;
       justify-content: center;
-      padding: 0px clamp(0.5rem, -5.88rem + 31.92vw, 9.4375rem);
-      quotes: none;
+      padding-inline: var(padding-inline-display);
       @media only screen and (min-width: $tablet-big) {
         & {
           padding-inline: clamp(120px, 9.7vw, 150px);

@@ -40,8 +40,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <section className="services" id="services">
-          <h2 className="section-title title-display">
+        <section className="section-services" id="services">
+          <h2 className="section-title title-display c-white">
             Algunas ideas para empezar
           </h2>
           {services.map(service => {
@@ -50,7 +50,7 @@ export default function Home() {
         </section>
         <section className="section-contact grid" id="contact">
           <img src="./images/profile.png" alt="Soy Roberto" />
-          <p className="section-content title-display">
+          <p className="title-display info c-black">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
             instagram
           </p>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section-subscribe grid">
-          <h2 className="title-display">
+          <h2 className="title-display section-title">
             Suscribete <br />
             (promociones y novedades)
           </h2>
@@ -67,8 +67,7 @@ export default function Home() {
         </section>
         <section className="go-top grid">
           <a href="#header">
-            <img src="./images/go-top.svg" alt="" />
-            {/* <p>Ir arriba</p> */}
+            <img src="./images/go-top.svg" alt="arrow pointing to the top" />
           </a>
         </section>
       </main>

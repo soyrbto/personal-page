@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="navbar">
         <ul>
           <a href="#services">
-            <li>Mis Servicios</li>
+            <li>Servicios</li>
           </a>
           <a href="#contact">
             <li>Contacto</li>
