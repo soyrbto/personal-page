@@ -50,7 +50,7 @@
 
   .services {
     padding-inline: var(--padding-horizontal);
-    padding-top: 34px;
+    padding-block: clamp(34px, 11.5vw, 106px);
     background-color: var(--grey-dark);
   }
 

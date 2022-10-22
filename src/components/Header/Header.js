@@ -10,9 +10,6 @@ export default function Header() {
       </div>
       <nav className="navbar">
         <ul>
-          <a href="#conoceme">
-            <li>Conóceme</li>
-          </a>
           <a href="#services">
             <li>Mis Servicios</li>
           </a>

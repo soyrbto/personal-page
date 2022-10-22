@@ -18,7 +18,7 @@
         margin-top: 92px;
         margin-left: 0;
         margin-bottom: 20px;
-        grid-column: 1 / span 7;
+        grid-column: 1 / span 6;
         align-self: end;
       }
     }
@@ -58,10 +58,11 @@
 
     @media only screen and (min-width: $desktop-big) {
       & {
-        grid-column: 8 / span 5;
+        grid-column: 7 / span 6;
         grid-row: 1 / span 3;
-        align-self: stretch;
+        align-self: center;
         margin: 0;
+        width: 100%;
       }
     }
   }
@@ -72,7 +73,6 @@
 
     .no-commitment {
       grid-column: 1 / -1;
-      margin: 0 23px;
       text-align: center;
     }
 
@@ -88,7 +88,7 @@
 
     @media only screen and (min-width: $desktop-big) {
       & {
-        grid-column: 1 / -1;
+        grid-column: 1 / span 6;
         justify-content: flex-start;
       }
     }
@@ -134,9 +134,7 @@
       quotes: none;
       @media only screen and (min-width: $tablet-big) {
         & {
-          font-size: 2rem;
-          // font-size: clamp(2rem, 0.5rem + 3.125vw, 3rem);
-          font-size: 36px;
+          padding-inline: clamp(120px, 9.7vw, 150px);
         }
       }
     }
