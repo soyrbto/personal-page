@@ -13,7 +13,7 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         margin-top: 40px;
         margin-left: 0;
@@ -33,7 +33,7 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         margin: 0;
         margin-bottom: 80px;
@@ -56,7 +56,7 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         grid-column: 8 / span 6;
         grid-row: 1 / span 3;
@@ -86,7 +86,7 @@
       background-color: var(--grey-medium);
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         grid-column: 1 / span 5;
         justify-content: flex-start;
@@ -96,7 +96,7 @@
     .no-commitment {
       margin-top: 18px;
 
-      @media only screen and (min-width: $desktop-big) {
+      @media only screen and (min-width: $desktop-small) {
         & {
           grid-column: 2 /-1;
           text-align: left;
@@ -137,7 +137,7 @@
         }
       }
 
-      @media only screen and (min-width: $desktop-big) {
+      @media only screen and (min-width: $desktop-small) {
         & {
           padding-inline: clamp(150px, 21.2vw, 407px);
         }

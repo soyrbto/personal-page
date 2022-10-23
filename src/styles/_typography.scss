@@ -49,7 +49,7 @@
 }
 
 // between 1279px and 1536px width
-@media only screen and (min-width: $desktop-big) {
+@media only screen and (min-width: $desktop-small) {
   :root {
     // 20px - 20px
     --fs-xs: 1.25rem;

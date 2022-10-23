@@ -28,7 +28,7 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         width: 119px;
         grid-row: 1 / span 1;
@@ -74,7 +74,7 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         margin-left: 0;
         grid-row: 1 / span 1;

@@ -5,11 +5,15 @@ import Button from "../Button/Button"
 export default function Form() {
   return (
     <form className="subscribe-form grid">
-      <label htmlFor="name">Nombre</label>
-      <input type="text" placeholder="Nombre" id="name" />
-      <label htmlFor="email">Correo</label>
-      <input type="text" placeholder="Email" id="email" />
-      <Button className="button">Subscribete</Button>
+      <div className="field">
+        <label htmlFor="name">Nombre</label>
+        <input type="text" placeholder="Nombre" id="name" />
+      </div>
+      <div className="field">
+        <label htmlFor="email">Correo</label>
+        <input type="text" placeholder="Email" id="email" />
+      </div>
+      <Button>Subscribete</Button>
     </form>
   )
 }

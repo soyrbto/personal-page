@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (min-width: $desktop-big) {
+@media only screen and (min-width: $desktop-small) {
   .service-item {
     .title {
       grid-column: 1 / span 3;

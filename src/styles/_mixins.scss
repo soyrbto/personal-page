@@ -77,7 +77,7 @@
     }
   }
 
-  @media only screen and (min-width: $desktop-big) {
+  @media only screen and (min-width: $desktop-small) {
     &::after {
       grid-column: -4 / -1;
       width: calc(50% - 66.5px);

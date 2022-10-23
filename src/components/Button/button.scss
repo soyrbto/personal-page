@@ -14,14 +14,14 @@
       }
     }
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         padding-block: clamp(18px, 1.3vw, 20px);
       }
     }
   }
 
-  @media only screen and (min-width: $desktop-big) {
+  @media only screen and (min-width: $desktop-small) {
     & {
       grid-column: 2 / -1;
       justify-self: start;

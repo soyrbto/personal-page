@@ -1,25 +1,39 @@
 .subscribe-form {
+  grid-column: 1/-1;
   padding: 35px var(--padding-horizontal);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: var(--grey-dark);
-  grid-column: 1/-1;
+  gap: 18px;
   align-items: center;
-  gap: 15px;
   border-radius: 27px;
 
-  input {
-    border-radius: 8px;
-    border: none;
-    padding: 12px;
-    min-width: 100%;
+  @media only screen and (min-width: $desktop-small) {
+    & {
+      grid-column: 3 / -3;
+      gap: 24px;
+    }
   }
 
-  label {
-    font-size: 14px;
-    color: white;
-    font-family: "josefin sans", sans-serif;
-    align-self: flex-start;
+  .field ~ .field input {
+    margin-bottom: 20px;
+  }
+
+  .field {
+    width: 100%;
+
+    label {
+      font-size: 14px;
+      color: white;
+      font-family: "josefin sans", sans-serif;
+    }
+
+    input {
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      padding: 12px;
+      min-width: 100%;
+    }
   }
 }

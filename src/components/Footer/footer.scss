@@ -6,7 +6,7 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (min-width: $desktop-big) {
+    @media only screen and (min-width: $desktop-small) {
       & {
         margin: 0 auto;
         width: 600px;

@@ -21,7 +21,7 @@
   --line-width: 2px;
 }
 
-@media only screen and (min-width: $desktop-big) {
+@media only screen and (min-width: $desktop-small) {
   :root {
     --line-width: 4px;
   }
