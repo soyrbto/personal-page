@@ -67,7 +67,7 @@ export default function Home() {
         </section>
         <section className="go-top grid">
           <a href="#header">
-            <img src="./images/go-top.svg" alt="arrow pointing to the top" />
+            <div className="go-top-icon" />
           </a>
         </section>
       </main>

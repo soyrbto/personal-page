@@ -9,16 +9,13 @@ footer {
     @media only screen and (min-width: $desktop-big) {
       & {
         margin: 0 auto;
-        width: 965px;
+        width: 600px;
       }
     }
 
     li {
       display: flex;
       align-items: center;
-      p {
-        font-size: clamp(0.625rem, 0.197rem + 2.14vw, 2.25rem);
-      }
 
       img {
         margin-right: 9px;

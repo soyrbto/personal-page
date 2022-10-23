@@ -26,21 +26,20 @@
   &::after {
     content: "";
     position: absolute;
-    grid-column: 1 / -1;
-    top: 42.5%;
-    height: var(--line-width);
-    width: 15.5%;
+    bottom: 0;
+    left: var(--padding-horizontal);
+    width: var(--line-width);
+    height: 100%;
     background-color: var(--grey-dark);
   }
 
   &::before {
-    grid-column: 1 / 4;
     position: absolute;
     content: "";
-    top: 42.5%;
+    bottom: 0;
+    left: var(--padding-horizontal);
     height: var(--line-width);
-    width: 67.5vw;
-    width: calc(100% - (57px / 2) + 4px + 1px);
+    width: calc(100% - (2 * var(--padding-horizontal)));
     background-color: var(--grey-dark);
   }
 }
@@ -51,7 +50,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 48%;
+    top: 49.5%;
     height: var(--line-width);
     width: calc(100% - 28.5px + 5px);
     background-color: var(--grey-dark);
@@ -62,9 +61,31 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 48%;
+    top: 49.5%;
     height: var(--line-width);
     width: calc(100% - 28.5px + 6px);
     background-color: var(--grey-dark);
+  }
+
+  @media only screen and (min-width: $tablet-small) {
+    &::after {
+      width: calc(100% - 28.5px + 11px);
+    }
+
+    &::before {
+      width: calc(100% - 28.5px + 12px);
+    }
+  }
+
+  @media only screen and (min-width: $desktop-big) {
+    &::after {
+      grid-column: -4 / -1;
+      width: calc(50% - 66.5px);
+    }
+
+    &::before {
+      grid-column: 1/ 12;
+      width: calc(96.5% - 64px);
+    }
   }
 }

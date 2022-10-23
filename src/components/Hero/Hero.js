@@ -19,7 +19,7 @@ export default function Hero() {
         alt="Person thinking in web ideas"
         className="hero-image"
       />
-      <div className="contact-box grid">
+      <div className="contact-box grid sec-grid">
         <Button>Agenda una asesoria</Button>
         <div className="no-commitment notification italic">
           *Sin compromiso, agenda un dia disponibles para videollamada y

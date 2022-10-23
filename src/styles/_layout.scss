@@ -43,6 +43,10 @@
   }
 }
 
+.sec-grid {
+  padding-inline: 0;
+}
+
 .Home {
   background-color: var(--pink-light);
   padding-top: var(--padding-vertical);
@@ -78,12 +82,31 @@
       grid-column: 1 /-1;
       justify-self: center;
     }
+
+    @media only screen and (min-width: $tablet-small) {
+      & {
+        img {
+          grid-column: 1 / span 3;
+          grid-row: 1 / span 2;
+          align-self: center;
+        }
+
+        .info {
+          margin-right: 20px;
+          text-align: left;
+          grid-column: 4 / -1;
+        }
+
+        .button {
+          grid-column: 4 /-1;
+          justify-self: start;
+        }
+      }
+    }
   }
 
   .section-subscribe {
     padding-top: calc(var(--section-padding-block) * 0.75);
-
-    
 
     @media only screen and (min-width: $tablet-small) {
       & {
@@ -102,13 +125,41 @@
     height: 150px;
     position: relative;
 
+    @media only screen and (min-width: $desktop-big) {
+      & {
+        height: 250px;
+      }
+    }
+
     @include horizontal-lines;
+
+    .go-top-icon {
+      height: 57px;
+      width: 57px;
+      background-image: url(../assets/images/go-top-small.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media only screen and (min-width: $desktop-big) {
+        & {
+          height: 133px;
+          width: 133px;
+          background-image: url(../assets/images/go-top-big.svg);
+        }
+      }
+    }
 
     a {
       grid-column: -3 / span 2;
       grid-row: 1 / span 1;
       justify-self: center;
       align-self: center;
+
+      @media only screen and (min-width: $desktop-big) {
+        & {
+          grid-column: -4 / span 3;
+        }
+      }
 
       img {
         margin: 0 auto;
