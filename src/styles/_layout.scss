@@ -52,9 +52,18 @@
   padding-top: var(--padding-vertical);
 
   .section-services {
+    position: relative;
+
+    @include section-right-lines;
+
     .section-title {
+      position: relative;
+      padding-top: 20px;
+      padding-left: 20px;
       grid-column: 1 / -1;
       margin-bottom: var(--margin-bottom-title);
+
+      @include section-left-lines;
     }
 
     // padding-inline: var(--padding-horizontal);

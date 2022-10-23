@@ -17,7 +17,7 @@
       & {
         margin-top: 40px;
         margin-left: 0;
-        grid-column: 1 / span 6;
+        grid-column: 1 / span 7;
         align-self: center;
       }
     }
@@ -43,25 +43,25 @@
   }
 
   .hero-image {
-    width: clamp(17.75rem, -2.25rem + 100vw, 20.25rem);
+    width: 100%;
     grid-column: 1 / -1;
     margin-top: 36px;
     margin-bottom: 19px;
     justify-self: center;
 
-    @media only screen and (min-width: $tablet-big) {
+    @media only screen and (min-width: $tablet-small) {
       & {
+        width: clamp(324px, 32.55vw, 500px);
         grid-column: 1 / -1;
       }
     }
 
     @media only screen and (min-width: $desktop-big) {
       & {
-        grid-column: 7 / span 6;
+        grid-column: 8 / span 6;
         grid-row: 1 / span 3;
         align-self: center;
         margin: 0;
-        width: 70%;
       }
     }
   }

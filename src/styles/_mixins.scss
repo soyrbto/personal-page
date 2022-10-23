@@ -89,3 +89,47 @@
     }
   }
 }
+
+@mixin section-left-lines {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: var(--line-width);
+    height: 100%;
+    background-color: white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: var(--line-width);
+    width: 30%;
+    background-color: white;
+  }
+}
+
+@mixin section-right-lines {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: var(--line-width);
+    height: 15%;
+    background-color: white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 5%;
+    right: 5%;
+    height: var(--line-width);
+    width: 30%;
+    background-color: white;
+  }
+}
