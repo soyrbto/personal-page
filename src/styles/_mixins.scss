@@ -111,25 +111,3 @@
     background-color: white;
   }
 }
-
-@mixin section-right-lines {
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    width: var(--line-width);
-    height: 15%;
-    background-color: white;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 5%;
-    right: 5%;
-    height: var(--line-width);
-    width: 30%;
-    background-color: white;
-  }
-}

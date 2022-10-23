@@ -54,16 +54,20 @@
   .section-services {
     position: relative;
 
-    @include section-right-lines;
-
     .section-title {
       position: relative;
-      padding-top: 20px;
-      padding-left: 20px;
+      padding-top: clamp(17px, 6vw, 36px);
+      padding-left: clamp(13px, 4.16vw, 25px);
       grid-column: 1 / -1;
       margin-bottom: var(--margin-bottom-title);
-
       @include section-left-lines;
+
+      @media only screen and (min-width: $tablet-small) {
+        & {
+          padding-top: clamp(36px, 5vw, 65px);
+          padding-left: clamp(25px, 3vw, 48px);
+        }
+      }
     }
 
     // padding-inline: var(--padding-horizontal);
