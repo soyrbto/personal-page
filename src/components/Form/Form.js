@@ -4,7 +4,7 @@ import Button from "../Button/Button"
 
 export default function Form() {
   return (
-    <form className="subscribe-form">
+    <form className="subscribe-form grid">
       <label htmlFor="name">Nombre</label>
       <input type="text" placeholder="Nombre" id="name" />
       <label htmlFor="email">Correo</label>

@@ -3,9 +3,8 @@
     content: "";
     display: inline-block;
     position: absolute;
-    right: 0;
+    right: var(--padding-horizontal);
     bottom: -20%;
-    z-index: 100;
     width: var(--line-width);
     background-color: var(--grey-medium);
     height: 100%;
@@ -15,11 +14,11 @@
     content: "";
     display: inline-block;
     position: absolute;
-    left: 0;
+    right: var(--padding-horizontal);
     bottom: 0;
     height: var(--line-width);
     background-color: var(--grey-medium);
-    width: 100%;
+    width: calc(100% - (2 * var(--padding-horizontal)));
   }
 }
 
@@ -27,7 +26,7 @@
   &::after {
     content: "";
     position: absolute;
-    right: 0;
+    grid-column: 1 / -1;
     top: 42.5%;
     height: var(--line-width);
     width: 15.5%;
@@ -36,9 +35,8 @@
 
   &::before {
     grid-column: 1 / 4;
-    content: "";
     position: absolute;
-    left: 0;
+    content: "";
     top: 42.5%;
     height: var(--line-width);
     width: 67.5vw;

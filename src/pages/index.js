@@ -40,7 +40,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <section className="section-services" id="services">
+        <section className="section-services grid" id="services">
           <h2 className="section-title title-display c-white">
             Algunas ideas para empezar
           </h2>
@@ -63,7 +63,7 @@ export default function Home() {
             Suscribete <br />
             (promociones y novedades)
           </h2>
-          <Form></Form>
+          <Form />
         </section>
         <section className="go-top grid">
           <a href="#header">
