@@ -6,7 +6,7 @@
   .logo {
     width: clamp(60px, 18.75vw, 79px);
     padding: 8px 9px 0px 8px;
-    grid-column: 1 / -1;
+    grid-column: 1 / 1;
     margin-left: 1.5vw;
 
     img {
@@ -14,63 +14,29 @@
       height: 100%;
     }
 
-    @media only screen and (min-width: $tablet-small) {
-      & {
-        grid-column: 1 / span 1;
-        border-bottom: none;
-      }
-    }
-
     @media only screen and (min-width: $tablet-big) {
       & {
         width: clamp(79px, 13.17vw, 119px);
-        margin-left: 1.5vw;
-      }
-    }
-
-    @media only screen and (min-width: $desktop-small) {
-      & {
-        width: 119px;
-        grid-row: 1 / span 1;
-        grid-column: 1 / -1;
-        justify-self: start;
       }
     }
   }
 
   .navbar {
-    min-height: 25px;
     grid-column: 1 / span 4;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.08em;
     justify-self: center;
-    align-self: end;
-    display: flex;
-    align-items: center;
 
-    @media only screen and (min-width: $mobile-medium) {
-      & {
-        font-size: 0.75rem;
-        font-size: clamp(0.75rem, 0.57rem + 0.9vw, 1rem);
-      }
+    ul {
+      gap: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     @media only screen and (min-width: $tablet-small) {
       & {
         align-self: center;
-        font-size: 16px;
         grid-column: 2 / -1;
-        border-bottom: none;
-        border-right: none;
         justify-self: end;
-        padding-right: 0;
-      }
-    }
-    @media only screen and (min-width: $tablet-big) {
-      & {
-        font-size: 1rem;
-        font-size: clamp(1rem, 0.78rem + 0.59vw, 1.25rem);
       }
     }
 
@@ -81,22 +47,6 @@
         grid-column: 1 / -1;
         justify-self: center;
         align-self: end;
-      }
-
-      &::after {
-        height: 75px;
-      }
-    }
-
-    ul {
-      gap: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      li {
-        flex: fit-content;
-        font-weight: 600;
       }
     }
   }

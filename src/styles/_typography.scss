@@ -112,8 +112,12 @@ p {
   letter-spacing: 0.1em;
 }
 
-
-
 .italic {
   font-style: italic;
+}
+
+li{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-size: var(--fs-s);
 }
