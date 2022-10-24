@@ -76,18 +76,6 @@
       width: calc(100% - 28.5px + 12px);
     }
   }
-
-  @media only screen and (min-width: $desktop-small) {
-    &::after {
-      grid-column: -4 / -1;
-      width: calc(50% - 66.5px);
-    }
-
-    &::before {
-      grid-column: 1/ 12;
-      width: calc(96.15% - 64px);
-    }
-  }
 }
 
 @mixin section-left-lines {
