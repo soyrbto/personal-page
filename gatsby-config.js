@@ -60,8 +60,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: `Productos web`,
-    description: `Example project for the Gatsby Head API`,
-    siteUrl: `https://www.soytraspalacio.com`,
+    title: `Roberto Traspacio digital products development web services `,
+    description: `development services for ecommerce, digital products, landing, design coding deployment, maintenance by Roberto Traspalacio and his team`,
+    keywords: `web development ecommerce digital products`,
+    siteUrl: `https://soytraspalacio.com`,
   },
 }
