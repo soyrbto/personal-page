@@ -51,10 +51,12 @@
   padding-top: var(--padding-vertical);
 
   .section-services {
+    color: var(--color-white);
     padding-block: var(--section-padding-block);
     background-color: var(--grey-dark);
 
     .section-title {
+      color: var(--color-white);
       position: relative;
       padding-top: clamp(17px, 6vw, 36px);
       padding-left: clamp(13px, 4.16vw, 25px);

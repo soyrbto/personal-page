@@ -8,6 +8,14 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `https://soyrbto.digitalpress.blog`,
+        contentApiKey: `e7831d8c63ff9b3cf73e59012d`,
+        version: `v5.20.0`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       sassOptions: {
         includePaths: [`${__dirname}/src/styles/main.scss`],

@@ -60,8 +60,7 @@ export default function Home() {
         </section>
         <section className="section-subscribe grid">
           <h2 className="title-display section-title">
-            Suscribete <br />
-            (promociones y novedades)
+            Suscribete para promociones y novedades
           </h2>
           <Form />
         </section>
