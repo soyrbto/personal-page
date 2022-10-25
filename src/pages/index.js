@@ -6,6 +6,9 @@ import Service from "../components/Services/Service"
 import Button from "../components/Button/Button"
 import Form from "../components/Form/Form"
 import Footer from "../components/Footer/Footer"
+import { Seo } from "../components/Seo"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const services = [
   {
@@ -34,7 +37,8 @@ const services = [
   },
 ]
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data)
   return (
     <div className="Home">
       <Header />
@@ -49,7 +53,9 @@ export default function Home() {
           })}
         </section>
         <section className="section-contact grid" id="contact">
-          <img src="./images/profile.png" alt="Soy Roberto" />
+          <div className="profile-image">
+            <Img fluid={data.file.childImageSharp.fluid} />
+          </div>
           <p className="title-display info c-black">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
             instagram
@@ -74,3 +80,17 @@ export default function Home() {
     </div>
   )
 }
+
+export const query = graphql`
+  query profileImage {
+    file(relativePath: { eq: "profile.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+export const Head = () => <Seo />

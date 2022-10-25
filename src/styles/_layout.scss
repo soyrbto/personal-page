@@ -79,7 +79,8 @@
     padding-block: var(--section-padding-block);
     @include horizontal-right-lines;
 
-    img {
+    .profile-image {
+      width: 60%;
       grid-column: 1 / -1;
       justify-self: center;
     }
@@ -97,7 +98,8 @@
 
     @media only screen and (min-width: $tablet-small) {
       & {
-        img {
+        .profile-image {
+          width: 100%;
           grid-column: 1 / span 3;
           grid-row: 1 / span 2;
           align-self: center;

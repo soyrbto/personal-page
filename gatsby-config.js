@@ -7,6 +7,21 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/assets/images/favicon.svg",
+      },
+    },
     {
       resolve: `gatsby-source-ghost`,
       options: {
@@ -44,4 +59,9 @@ module.exports = {
       },
     },
   ],
+  siteMetadata: {
+    title: `Productos web`,
+    description: `Example project for the Gatsby Head API`,
+    siteUrl: `https://www.soytraspalacio.com`,
+  },
 }
