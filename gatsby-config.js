@@ -52,10 +52,28 @@ module.exports = {
         ],
         web: [
           {
-            name: `Josefin Sans, Josefin Slab, Poppins`,
+            name: `Josefin Sans, Josefin Slab, Poppins `,
             file: `https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Josefin+Slab:wght@400;600&family=Poppins:wght@700&display=swap`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-ZPZEJST46F", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Defaults to https://www.googletagmanager.com
+          origin: "https://www.googletagmanager.com",
+        },
       },
     },
   ],
