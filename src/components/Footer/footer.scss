@@ -6,6 +6,12 @@ footer {
     display: flex;
     justify-content: space-around;
 
+    @media only screen and (min-width: $desktop-small) {
+      & {
+        justify-content: space-evenly;
+      }
+    }
+
     a {
       display: flex;
       color: var(--color-white);
