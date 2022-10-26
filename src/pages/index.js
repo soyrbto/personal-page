@@ -8,7 +8,7 @@ import Form from "../components/Form/Form"
 import Footer from "../components/Footer/Footer"
 import { Seo } from "../components/Seo"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const services = [
   {
@@ -54,7 +54,7 @@ export default function Home({ data }) {
         </section>
         <section className="section-contact grid" id="contact">
           <div className="profile-image">
-            <Img fluid={data.file.childImageSharp.fluid} />
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
           </div>
           <p className="title-display info c-black">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
@@ -82,12 +82,10 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-  query profileImage {
+  query MyQuery {
     file(relativePath: { eq: "profile.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
