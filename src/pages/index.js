@@ -38,7 +38,6 @@ const services = [
 ]
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <div className="Home">
       <Header />
@@ -57,6 +56,7 @@ export default function Home({ data }) {
             image={data.file.childImageSharp.gatsbyImageData}
             as="div"
             className="profile-image"
+            alt="profile image"
           />
           <p className="title-display info c-black">
             Estoy a un click de distancia, aunque tambien puedes contactarme por

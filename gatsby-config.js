@@ -11,6 +11,13 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: "https://soytraspalacio.us21.list-manage.com/subscribe/post?u=23d5f00f4036c9a68ba6fb54f&amp;id=e22e0f2db1&amp;f_id=0046c1e1f0",
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
