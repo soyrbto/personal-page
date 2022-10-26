@@ -53,9 +53,11 @@ export default function Home({ data }) {
           })}
         </section>
         <section className="section-contact grid" id="contact">
-          <div className="profile-image">
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
-          </div>
+          <GatsbyImage
+            image={data.file.childImageSharp.gatsbyImageData}
+            as="div"
+            className="profile-image"
+          />
           <p className="title-display info c-black">
             Estoy a un click de distancia, aunque tambien puedes contactarme por
             instagram
@@ -85,7 +87,7 @@ export const query = graphql`
   query MyQuery {
     file(relativePath: { eq: "profile.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
       }
     }
   }
