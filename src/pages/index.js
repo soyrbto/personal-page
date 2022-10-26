@@ -67,9 +67,6 @@ export default function Home({ data }) {
           </div>
         </section>
         <section className="section-subscribe grid">
-          <h2 className="title-display section-title">
-            Suscribete para promociones y novedades
-          </h2>
           <Form />
         </section>
         <section className="go-top grid">

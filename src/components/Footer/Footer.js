@@ -1,21 +1,31 @@
-import React from "react"
-import "./footer.scss"
+import React from 'react'
+import './footer.scss'
 
 export default function Footer() {
   return (
     <footer>
       <ul>
         <li>
-          <img src="./images/instagram.svg" alt="" />
-          <p>Soyrbto.io</p>
+          <a
+            href="https://www.instagram.com/soytraspalacio/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <img src="./images/instagram.svg" alt="" />
+            <p>soytraspalacio</p>
+          </a>
         </li>
         <li>
-          <img src="./images/email.svg" alt="" />
-          <p>soyrbto@gmail.com</p>
+          <a href="mailto:contacto@soytraspalacio.com">
+            <img src="./images/email.svg" alt="" />
+            <p>contacto@soytraspalacio.com</p>
+          </a>
         </li>
         <li>
-          <img src="./images/github.svg" alt="" />
-          <p>soyrbto</p>
+          <a href="null">
+            <img src="./images/github.svg" alt="" />
+            <p>soytraspalacio</p>
+          </a>
         </li>
       </ul>
     </footer>

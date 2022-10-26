@@ -77,7 +77,6 @@
   .section-contact {
     position: relative;
     padding-block: var(--section-padding-block);
-    @include horizontal-right-lines;
 
     .profile-image {
       width: 60%;
@@ -129,6 +128,7 @@
     }
 
     .section-title {
+      color: var(--color-white);
       margin-bottom: var(--margin-bottom-title);
       grid-column: 1 / -1;
       text-align: center;

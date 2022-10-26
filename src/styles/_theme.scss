@@ -18,3 +18,14 @@
     --line-width: 4px;
   }
 }
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax var(--grey-dark);
+  clip-path: inset(0 -100vmax);
+
+  @media only screen and (min-width: $tablet-big) {
+    & {
+      box-shadow: none;
+    }
+  }
+}

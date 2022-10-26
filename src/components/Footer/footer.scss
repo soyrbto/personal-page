@@ -1,26 +1,25 @@
 footer {
   padding: 16px var(--padding-horizontal);
   background-color: var(--grey-dark);
-  color: var(--color-white);
 
   ul {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (min-width: $desktop-small) {
-      & {
-        margin: 0 auto;
-        width: 600px;
-      }
-    }
-
-    li {
+    a {
       display: flex;
+      color: var(--color-white);
       align-items: center;
-
       img {
         margin-right: 9px;
         height: 70%;
+      }
+
+      @media only screen and (min-width: $desktop-small) {
+        & {
+          margin: 0 auto;
+          width: 600px;
+        }
       }
     }
   }
