@@ -1,7 +1,7 @@
-import React from "react"
-import "./hero.scss"
-import heroImage from "../../assets/images/hero.svg"
-import Button from "../Button/Button"
+import React from 'react'
+import './hero.scss'
+import heroImage from '../../assets/images/hero.svg'
+import Button from '../Button/Button'
 
 export default function Hero() {
   return (
@@ -12,7 +12,8 @@ export default function Hero() {
         <br /> Proyecta tu idea web.
       </h1>
       <p className="subtitle">
-        Objetivamente, ¿que te detiene de empezar ese proyecto que quieres?
+        Objetivamente, ¿que te detiene de empezar ese
+        proyecto que quieres?
       </p>
       <img
         src={heroImage}
@@ -22,14 +23,15 @@ export default function Hero() {
       <div className="contact-box grid sec-grid">
         <Button>Agenda una asesoria</Button>
         <div className="no-commitment notification italic">
-          *Sin compromiso, agenda un dia disponibles para videollamada y
-          hablemos de tu idea.
+          *Sin compromiso, agenda un dia disponible para
+          videollamada y hablemos de tu idea.
         </div>
       </div>
       <section className="section-quote">
         <div className="border left" />
         <q className="quote title-display t-center">
-          Seguramente ya sabes que quieres, solo falta hacerlo realidad
+          Seguramente ya sabes que quieres, solo falta
+          hacerlo realidad
         </q>
         <div className="border right" />
       </section>
