@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="null">
+          <a href="https://github.com/soyrbto">
             <img src="./images/github.svg" alt="" />
             <p>soytraspalacio</p>
           </a>
