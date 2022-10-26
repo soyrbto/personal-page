@@ -16,9 +16,9 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="mailto:contacto@soytraspalacio.com">
+          <a href="mailto:hola@soytraspalacio.com">
             <img src="./images/email.svg" alt="" />
-            <p>contacto@soytraspalacio.com</p>
+            <p>hola@soytraspalacio.com</p>
           </a>
         </li>
         <li>

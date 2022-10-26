@@ -4,15 +4,30 @@ footer {
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     a {
       display: flex;
       color: var(--color-white);
       align-items: center;
       img {
-        margin-right: 9px;
-        height: 70%;
+        height: 25px;
+
+        @media only screen and (min-width: $desktop-small) {
+          & {
+            margin-right: 9px;
+            height: 70%;
+          }
+        }
+      }
+
+      p {
+        display: none;
+        @media only screen and (min-width: $desktop-small) {
+          & {
+            display: inline;
+          }
+        }
       }
 
       @media only screen and (min-width: $desktop-small) {
