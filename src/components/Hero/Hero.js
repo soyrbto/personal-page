@@ -3,7 +3,7 @@ import './hero.scss'
 import heroImage from '../../assets/images/hero.svg'
 import Button from '../Button/Button'
 
-export default function Hero({ className = '' }) {
+export default function Hero({ className = '', clickHandler }) {
   return (
     <div className={className}>
       <h1 className="title">
@@ -20,7 +20,7 @@ export default function Hero({ className = '' }) {
         className="hero-image"
       />
       <div className="contact-box grid sec-grid">
-        <Button className={''}>Agenda una asesoria</Button>
+        <Button clickHandler={() => clickHandler()}>Agenda una asesoria</Button>
         <div className="no-commitment notification italic">
           *Sin compromiso, agenda un dia disponible para videollamada y hablemos
           de tu idea.

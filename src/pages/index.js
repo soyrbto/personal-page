@@ -1,5 +1,5 @@
 import '../styles/main.scss'
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import Service from '../components/Services/Service'
@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer'
 import { Seo } from '../components/Seo'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { PopupModal } from 'react-calendly'
 
 const services = [
   {
@@ -38,12 +39,25 @@ const services = [
 ]
 
 export default function Home({ data }) {
+  const [popupSTate, setPopupState] = useState(false)
+
   return (
     <div className="Home">
+      <PopupModal
+        url="https://calendly.com/soyrbto/30min"
+        onModalClose={() => setPopupState(false)}
+        open={popupSTate}
+        rootElement={document.getElementById('portal')}
+      />
       <Header className={'grid'} />
       <main>
         <section>
-          <Hero className="hero grid" />
+          <Hero
+            className="hero grid"
+            clickHandler={() => {
+              setPopupState(true)
+            }}
+          />
         </section>
         <section className="section-services grid" id="services">
           <h2 className="section-title title-display">
@@ -64,7 +78,9 @@ export default function Home({ data }) {
             Estoy a un click de distancia, aunque tambien puedes contactarme por
             instagram
           </p>
-          <Button>Agenda un asesoria</Button>
+          <Button clickHandler={() => setPopupState(true)}>
+            Agenda un asesoria
+          </Button>
         </section>
         <section className="section-subscribe grid">
           <Form />
