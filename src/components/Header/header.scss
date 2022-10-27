@@ -1,7 +1,20 @@
-.Header {
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   position: relative;
 
-  @include horizontal-left-lines;
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   top: -20px;
+  //   background-color: transparent;
+  //   width: 100vw;
+  //   height: 120vh;
+  //   z-index: 100;
+  // }
 
   .logo {
     width: clamp(60px, 18.75vw, 79px);
@@ -22,12 +35,12 @@
   }
 
   .navbar {
+    display: none;
     grid-column: 1 / span 4;
     justify-self: center;
 
     ul {
       gap: 12px;
-      display: flex;
       justify-content: space-between;
       align-items: center;
     }
@@ -42,6 +55,7 @@
 
     @media only screen and (min-width: $desktop-small) {
       & {
+        display: flex;
         margin-left: 0;
         grid-row: 1 / span 1;
         grid-column: 1 / -1;

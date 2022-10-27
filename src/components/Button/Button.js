@@ -1,12 +1,10 @@
-import React from "react"
-import "./button.scss"
+import React from 'react'
+import './button.scss'
 
-export default function Button(props) {
+export default function Button({ className = '', children }) {
   return (
-    <div className="Button">
-      <button className={`title-read-small ${props.styles}`}>
-        {props.children}
-      </button>
-    </div>
+    <button className={`button title-read-small ${className}`}>
+      {children}
+    </button>
   )
 }

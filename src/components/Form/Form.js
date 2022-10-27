@@ -9,46 +9,48 @@ export default function Form() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    addToMailchimp(emailValue, { FNAME: nameValue }).then(
-      data => {
-        console.log(nameValue, emailValue, data)
-      }
-    )
+    addToMailchimp(emailValue, { FNAME: nameValue }).then(data => {
+      //Here i'll add the render condition for the success
+    })
     setEmailValue('')
     setNameValue('')
   }
 
+  const staticContent = [
+    {
+      labelfor: 'name',
+      labelText: 'nombre',
+      value: nameValue,
+      setter: setValue => setNameValue(setValue),
+    },
+    {
+      labelfor: 'email',
+      labelText: 'email',
+      value: emailValue,
+      setter: setValue => setEmailValue(setValue),
+    },
+  ]
+
   return (
-    <form
-      className="subscribe-form grid full-bleed"
-      onSubmit={handleSubmit}
-    >
+    <form className="subscribe-form grid full-bleed" onSubmit={handleSubmit}>
       <h2 className="title-display section-title">
         Suscribete para promociones y novedades
       </h2>
-      <div className="field">
-        <label htmlFor="name">Nombre</label>
-        <input
-          type="text"
-          placeholder="Nombre"
-          id="name"
-          value={nameValue}
-          onChange={e => setNameValue(e.target.value)}
-        />
-      </div>
-      <div className="field">
-        <label htmlFor="email" value={emailValue}>
-          Correo
-        </label>
-        <input
-          type="email"
-          placeholder="Email"
-          id="email"
-          value={emailValue}
-          onChange={e => setEmailValue(e.target.value)}
-        />
-      </div>
-      <Button>Subscribete</Button>
+      {staticContent.map((sc, i) => {
+        return (
+          <div className="field" key={i}>
+            <label htmlFor={sc.labelfor}>{sc.labelText}</label>
+            <input
+              type="text"
+              placeholder={sc.labelfor}
+              id={sc.labelfor}
+              value={sc.value}
+              onChange={e => sc.setter(e.target.value)}
+            />
+          </div>
+        )
+      })}
+      <Button className>Subscribete</Button>
     </form>
   )
 }

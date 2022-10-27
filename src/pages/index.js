@@ -1,5 +1,5 @@
-import React from 'react'
 import '../styles/main.scss'
+import React from 'react'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import Service from '../components/Services/Service'
@@ -40,44 +40,31 @@ const services = [
 export default function Home({ data }) {
   return (
     <div className="Home">
-      <Header />
+      <Header className={'grid'} />
       <main>
-        <Hero />
-        <section
-          className="section-services grid"
-          id="services"
-        >
-          <h2 className="section-title title-display c-white">
+        <section>
+          <Hero className="hero grid" />
+        </section>
+        <section className="section-services grid" id="services">
+          <h2 className="section-title title-display">
             Algunas ideas para empezar
           </h2>
           {services.map(service => {
-            return (
-              <Service
-                services={service}
-                key={service.title}
-              />
-            )
+            return <Service services={service} key={service.title} />
           })}
         </section>
-        <section
-          className="section-contact grid"
-          id="contact"
-        >
+        <section className="section-contact grid" id="contact">
           <GatsbyImage
-            image={
-              data.file.childImageSharp.gatsbyImageData
-            }
+            image={data.file.childImageSharp.gatsbyImageData}
             as="div"
             className="profile-image"
             alt="profile image"
           />
-          <p className="title-display info c-black">
-            Estoy a un click de distancia, aunque tambien
-            puedes contactarme por instagram
+          <p className="title-display info">
+            Estoy a un click de distancia, aunque tambien puedes contactarme por
+            instagram
           </p>
-          <div className="button">
-            <Button>Agenda un asesoria</Button>
-          </div>
+          <Button>Agenda un asesoria</Button>
         </section>
         <section className="section-subscribe grid">
           <Form />
@@ -97,10 +84,7 @@ export const query = graphql`
   query MyQuery {
     file(relativePath: { eq: "profile.png" }) {
       childImageSharp {
-        gatsbyImageData(
-          layout: FULL_WIDTH
-          placeholder: TRACED_SVG
-        )
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
       }
     }
   }
