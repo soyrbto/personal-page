@@ -1,9 +1,9 @@
 import React from 'react'
 import './hero.scss'
 import heroImage from '../../assets/images/hero.svg'
-import Button from '../Button/Button'
+import Schedule from '../Schedule/Schedule'
 
-export default function Hero({ className = '', clickHandler }) {
+export default function Hero({ className = '' }) {
   return (
     <div className={className}>
       <h1 className="title">
@@ -20,7 +20,7 @@ export default function Hero({ className = '', clickHandler }) {
         className="hero-image"
       />
       <div className="contact-box grid sec-grid">
-        <Button clickHandler={() => clickHandler()}>Agenda una asesoria</Button>
+        <Schedule />
         <div className="no-commitment notification italic">
           *Sin compromiso, agenda un dia disponible para videollamada y hablemos
           de tu idea.

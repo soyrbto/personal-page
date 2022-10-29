@@ -55,7 +55,7 @@
 
     @media only screen and (min-width: $desktop-small) {
       & {
-        display: flex;
+        // display: flex;
         margin-left: 0;
         grid-row: 1 / span 1;
         grid-column: 1 / -1;
