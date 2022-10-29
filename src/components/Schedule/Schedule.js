@@ -25,7 +25,7 @@ export default function Schedule() {
 
       {element ? (
         <PopupModal
-          url="https://calendly.com/soyrbto/30min"
+          url="https://calendly.com/soyrbto/hablemos"
           onModalClose={() => setState(false)}
           open={state}
           rootElement={document.getElementById('portal')}
