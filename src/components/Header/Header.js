@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
-import menuIcon from '../../assets/images/menu.svg'
 import './header.scss'
+import BurguerButton from '../BurguerButton/BurguerButton'
 
 export default function Header({ className }) {
   return (
@@ -9,7 +9,7 @@ export default function Header({ className }) {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <img src={menuIcon} alt="menu icon" />
+      <BurguerButton />
       <nav className="navbar">
         <ul>
           <a href="#services">
