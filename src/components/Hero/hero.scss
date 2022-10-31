@@ -74,6 +74,16 @@
       padding-inline: var(--padding-inline-display);
       grid-column: 1 / -1;
       text-align: center;
+      margin-top: 18px;
+      margin-bottom: var(--fs-l);
+
+      @media only screen and (min-width: $desktop-small) {
+        & {
+          grid-column: 2 /-1;
+          text-align: left;
+          margin-bottom: 56px;
+        }
+      }
     }
 
     &::after {
@@ -90,18 +100,6 @@
       & {
         grid-column: 1 / span 5;
         justify-content: flex-start;
-      }
-    }
-
-    .no-commitment {
-      margin-top: 18px;
-
-      @media only screen and (min-width: $desktop-small) {
-        & {
-          grid-column: 2 /-1;
-          text-align: left;
-          margin-bottom: 56px;
-        }
       }
     }
   }

@@ -14,7 +14,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet-big) {
+@media only screen and (min-width: $desktop-small) {
   :root {
     --padding-horizontal: clamp(32.5px, 11.88vw, 152px);
     --padding-vertical: clamp(11px, 3.5vw, 58px);
@@ -79,36 +79,27 @@
     padding-block: var(--section-padding-block);
 
     .profile-image {
-      width: 60%;
+      width: 100%;
       grid-column: 1 / -1;
       justify-self: center;
+      align-self: center;
+      margin-bottom: 30px;
     }
 
-    .info {
+    .schedule {
       text-align: center;
-      margin: 30px 0 14px 0;
       grid-column: 1 / -1;
       align-self: center;
-    }
 
-    .button-consultation {
-      grid-column: 1 /-1;
-      justify-self: center;
+      .info {
+        margin-bottom: 14px;
+      }
     }
 
     @media only screen and (min-width: $tablet-small) {
       & {
         .profile-image {
-          width: 100%;
-          grid-column: 1 / span 3;
-          grid-row: 1 / span 2;
-          align-self: center;
-        }
-
-        .info {
-          margin-right: 20px;
-          text-align: left;
-          grid-column: 4 / -1;
+          grid-column: 3 / span 4;
         }
 
         .button {
@@ -117,11 +108,36 @@
         }
       }
     }
+
+    @media only screen and (min-width: $tablet-big) {
+      & {
+        .profile-image {
+          grid-column: 2 / span 2;
+          align-self: center;
+        }
+
+        .schedule {
+          text-align: left;
+          grid-column: 4 / span 4;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $desktop-small) {
+      & {
+        .profile-image {
+          grid-column: 2 / span 3;
+        }
+
+        .schedule {
+          text-align: left;
+          grid-column: 5 / span 7;
+        }
+      }
+    }
   }
 
   .section-subscribe {
-    padding-top: calc(var(--section-padding-block) * 0.75);
-
     @media only screen and (min-width: $tablet-small) {
       & {
         background-color: transparent;
@@ -130,7 +146,7 @@
 
     .section-title {
       color: var(--color-white);
-      margin-bottom: var(--margin-bottom-title);
+      margin-bottom: 15px;
       grid-column: 1 / -1;
       text-align: center;
     }

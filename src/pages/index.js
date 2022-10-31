@@ -5,7 +5,6 @@ import Hero from '../components/Hero/Hero'
 import Service from '../components/Services/Service'
 import Form from '../components/Form/Form'
 import Footer from '../components/Footer/Footer'
-import Button from '../components/Button/Button'
 import Schedule from '../components/Schedule/Schedule'
 import { Seo } from '../components/Seo'
 import { graphql } from 'gatsby'
@@ -61,11 +60,14 @@ export default function Home({ data }) {
             className="profile-image"
             alt="profile image"
           />
-          <p className="title-display info">
-            Estoy a un click de distancia, aunque tambien puedes contactarme por
-            instagram
-          </p>
-          <Schedule />
+          <div className="schedule">
+            <h4 className="info">
+              Estoy a un click de distancia, aunque tambien puedes contactarme
+              por instagram
+            </h4>
+
+            <Schedule />
+          </div>
         </section>
         <section className="section-subscribe grid">
           <Form />

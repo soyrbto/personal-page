@@ -1,12 +1,19 @@
 .subscribe-form {
   grid-column: 1/-1;
-  padding: 60px var(--padding-horizontal);
+  padding-block: 60px;
+  padding-inline: 0px;
   display: flex;
   flex-direction: column;
   background-color: var(--grey-dark);
-  gap: 18px;
+  gap: 12px;
   align-items: center;
   border-radius: 27px;
+
+  @media only screen and (min-width: $tablet-big) {
+    & {
+      padding: 60px var(--padding-horizontal);
+    }
+  }
 
   @media only screen and (min-width: $desktop-small) {
     & {

@@ -6,6 +6,8 @@
   --fs-s: clamp(0.75rem, -0.25rem + 5vw, 0.875rem);
   // 14px - 16px
   --fs-m: clamp(0.875rem, -0.125rem + 5vw, 1rem);
+  // 14px - 16px
+  --fs-ms:  clamp(0.875rem, -0.125rem + 5vw, 1rem);
   // 18px - 20px
   --fs-l: clamp(1.125rem, 0.125rem + 5vw, 1.25rem);
   // 20px - 24px
@@ -23,6 +25,8 @@
     --fs-s: clamp(0.875rem, 0.69rem + 0.05vw, 1rem);
     // 16px
     --fs-m: 1rem
+     // 14px - 16px
+    --fs-ms:  1rem;
     // 20px - 36px
     --fs-l: clamp(1.25rem, -0.25rem + 6.67vw, 2.25rem);
     // 36px - 40px
@@ -39,6 +43,8 @@
     --fs-s: 1rem;
     // 20px - 32px
     --fs-m: 1rem;
+    // 16px - 32px
+    --fs-ms:  clamp(1rem, 0.11rem + 2.36vw, 2rem);
     // 36px - 40px
     --fs-l: 2.25rem ;
     // 32px - 48px
@@ -57,6 +63,8 @@
     --fs-s: 1rem;
     // 16px
     --fs-m: 1rem;
+     // 16px - 32px
+     --fs-ms:  clamp(2rem, 1rem + 1.04vw, 2.25rem);
     // 36px - 40px
     --fs-l: clamp(2.25rem, 1rem + 1.5625vw, 2.5rem);
     // 48px - 48px
@@ -69,6 +77,17 @@
 h1 {
   font-family: "Josefin Slab", serif;
   font-size: var(--fs-display);
+}
+
+h3{
+  font-family: "poppins", sans-serif;
+  font-size: var(--fs-l);
+}
+
+h4{
+  font-family: "josefin slab", sans-serif;
+  font-size: var(--fs-ms);
+  line-height: 160%;
 }
 
 .subtitle {
@@ -95,10 +114,6 @@ p {
   line-height: 160%;
 }
 
-.title-read {
-  font-family: "poppins", sans-serif;
-  font-size: var(--fs-l);
-}
 
 .title-display {
   font-family: "josefin slab", serif;
