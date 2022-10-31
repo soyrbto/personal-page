@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 import Button from '../Button/Button'
 import { PopupModal } from 'react-calendly'
 
-const portalRoot =
-  typeof document !== `undefined` ? document.getElementById('portal') : null
-
 export default function Schedule() {
-  const [element, setElement] = useState(
+  const portalRoot =
+    typeof document !== `undefined` ? document.getElementById('portal') : null
+
+  const element =
     typeof document !== `undefined` ? document.createElement('div') : null
-  )
 
   const [state, setState] = useState(false)
 
