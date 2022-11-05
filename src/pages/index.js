@@ -17,22 +17,11 @@ const services = [
       'Pagina de unico proposito. Mostrar tus servicios o productos, hacer marketing digital, captar informacion de tu audiencia. Son algunos de los propositos de este tipo de paginas.',
     urlImage: './images/service-landing.svg',
   },
+
   {
-    title: 'Blogs',
+    title: 'Tienda express',
     content:
-      'Para creadores de contenido o aquellos que quieren hacer marketing optimizando su pagina para buscadores, no hay mejor forma de conectar con tu audiencia que dandoles contenido de valor e interes para ellos.',
-    urlImage: './images/service-blog.svg',
-  },
-  {
-    title: 'Menu',
-    content:
-      'Con el auge de la tecnologia es comun encontrar ahora todo tipo de menus, volantes o pequeñas páginas con contenido puntual, facil de actualizar y ecologico al ahorrar desperdicios en papel',
-    urlImage: './images/service-menu.svg',
-  },
-  {
-    title: 'Link page',
-    content:
-      'Especialmente para instagram, un unico sitio web donde puedes listar links para redireccionar a tu audiencia hacia contenidos/productos/servicios.',
+      'Perfecto compañero para tu tienda en crecimiento. Automatiza el proceso de creación de orden, facilita la gestión del inventario y muestra un catálogo detallado a tus clientes.',
     urlImage: './images/service-linkpage.svg',
   },
 ]

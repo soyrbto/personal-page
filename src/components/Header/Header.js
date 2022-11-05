@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
 import './header.scss'
-import BurguerButton from '../BurguerButton/BurguerButton'
+// import BurguerButton from '../BurguerButton/BurguerButton'
 
 export default function Header({ className, handleNavbar }) {
   return (
@@ -9,7 +9,7 @@ export default function Header({ className, handleNavbar }) {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <BurguerButton handleClick={handleNavbar} />
+      {/* <BurguerButton handleClick={handleNavbar} /> */}
       <nav className="navbar">
         <ul>
           <a href="#services">
