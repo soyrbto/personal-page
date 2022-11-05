@@ -12,14 +12,14 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 const services = [
   {
-    title: 'Landing',
+    title: 'Landing Page',
     content:
       'Pagina de unico proposito. Mostrar tus servicios o productos, hacer marketing digital, captar informacion de tu audiencia. Son algunos de los propositos de este tipo de paginas.',
     urlImage: './images/service-landing.svg',
   },
 
   {
-    title: 'Tienda express',
+    title: 'Tienda Online Express',
     content:
       'Perfecto compañero para tu tienda en crecimiento. Automatiza el proceso de creación de orden, facilita la gestión del inventario y muestra un catálogo detallado a tus clientes.',
     urlImage: './images/service-linkpage.svg',

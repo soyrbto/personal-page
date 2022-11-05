@@ -1,7 +1,19 @@
 .service-item {
+  position: relative;
   padding: 0;
   grid-column: 1 / -1;
   margin-bottom: 35px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    height: var(--line-width);
+    width: 100%;
+    background-color: white;
+  }
+
   .title {
     grid-column: 1 / -1;
   }
@@ -9,14 +21,14 @@
   .content {
     grid-column: 1 / -2;
     padding-block: 18px;
-    border-bottom: var(--line-width) solid var(--grey-medium);
+    align-self: center;
   }
 
   img {
     grid-column: span 1;
     align-self: center;
     justify-self: center;
-    width: 70%;
+    width: 100%;
   }
 }
 

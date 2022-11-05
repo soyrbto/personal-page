@@ -113,6 +113,7 @@
     @media only screen and (min-width: $tablet-big) {
       & {
         .profile-image {
+          width: 100%;
           grid-column: 2 / span 2;
           align-self: center;
         }
