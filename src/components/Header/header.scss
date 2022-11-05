@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  // justify-content: center;
   position: relative;
 
   // &::before {
@@ -18,10 +18,10 @@
 
   .logo {
     z-index: 1000;
-    width: clamp(60px, 18.75vw, 79px);
+    width: clamp(130px, 20.75vw, 200px);
     padding: 8px 9px 0px 8px;
     grid-column: 1 / 1;
-    margin-left: 1.5vw;
+    margin-inline: auto;
 
     img {
       width: 100%;
@@ -30,7 +30,8 @@
 
     @media only screen and (min-width: $tablet-big) {
       & {
-        width: clamp(79px, 13.17vw, 119px);
+        margin-left: 1.5vw;
+        width: clamp(200px, 22.17vw, 250px);
       }
     }
   }
