@@ -1,5 +1,5 @@
 import '../styles/main.scss'
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import Service from '../components/Services/Service'
@@ -38,9 +38,23 @@ const services = [
 ]
 
 export default function Home({ data }) {
+  const [navbarState, setNavbarState] = useState(false)
+
+  const handleScroll = e => {
+    console.log('holis')
+  }
+
   return (
-    <div className="Home">
-      <Header className={'grid'} />
+    <div
+      className={`Home  ${
+        navbarState ? 'navbar-overlay open' : 'navbar-overlay close'
+      }`}
+      onScroll={e => handleScroll}
+    >
+      <Header
+        className={'grid'}
+        handleNavbar={() => setNavbarState(!navbarState)}
+      />
       <main>
         <section>
           <Hero className="hero grid" />

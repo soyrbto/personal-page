@@ -49,6 +49,7 @@
 .Home {
   background-color: var(--pink-light);
   padding-top: var(--padding-vertical);
+  position: relative;
 
   .section-services {
     color: var(--color-white);
@@ -189,4 +190,44 @@
       }
     }
   }
+}
+
+.navbar-overlay.open::after {
+  content: '';
+  position: absolute;
+  top: 0vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1c1c1c;
+  animation-name: navbarOpen;
+  animation-duration: 1s;
+}
+
+@keyframes navbarOpen {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes navbarClose {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+.navbar-overlay.close::before {
+  content: '';
+  position: absolute;
+  top: -100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1c1c1c;
+  animation-name: navbarClose;
+  animation-duration: 1s;
 }
