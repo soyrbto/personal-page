@@ -61,6 +61,7 @@ export default function Home({ data }) {
             image={data.file.childImageSharp.gatsbyImageData}
             as="div"
             className="profile-image"
+            imgClassName="image"
             alt="profile image"
           />
           <div className="schedule">

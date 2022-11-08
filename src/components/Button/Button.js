@@ -1,13 +1,19 @@
 import React from 'react'
 import './button.scss'
+import { Link } from 'gatsby'
 
-export default function Button({ className = '', children, clickHandler }) {
+export default function Button({
+  className = '',
+  children,
+  clickHandler,
+  linkTo,
+}) {
   return (
     <button
       className={`button title-read-small ${className}`}
       onClick={clickHandler}
     >
-      {children}
+      <Link to={linkTo}>{children}</Link>
     </button>
   )
 }

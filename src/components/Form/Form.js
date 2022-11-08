@@ -6,14 +6,18 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 export default function Form() {
   const [nameValue, setNameValue] = useState('')
   const [emailValue, setEmailValue] = useState('')
+  const [sucessState, setSuccessState] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
     addToMailchimp(emailValue, { FNAME: nameValue }).then(data => {
-      //Here i'll add the render condition for the success
+      setSuccessState(true)
+      setEmailValue('')
+      setNameValue('')
+      setInterval(() => {
+        setSuccessState(false)
+      }, 3000)
     })
-    setEmailValue('')
-    setNameValue('')
   }
 
   const staticContent = [
@@ -31,8 +35,8 @@ export default function Form() {
     },
   ]
 
-  return (
-    <form className="subscribe-form grid full-bleed" onSubmit={handleSubmit}>
+  const formInputs = (
+    <>
       <h2 className="title-display section-title">
         Suscribete para promociones y novedades
       </h2>
@@ -51,6 +55,18 @@ export default function Form() {
         )
       })}
       <Button className>Subscribete</Button>
+    </>
+  )
+
+  const successMessage = (
+    <h2 className="title-display section-title">
+      Te haz suscrito exitosamente
+    </h2>
+  )
+
+  return (
+    <form className="subscribe-form grid full-bleed" onSubmit={handleSubmit}>
+      {sucessState ? successMessage : formInputs}
     </form>
   )
 }

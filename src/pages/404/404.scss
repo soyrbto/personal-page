@@ -1,0 +1,13 @@
+.not-found {
+  img {
+    grid-column: 1 /-1;
+    justify-self: center;
+    margin: 30px 0 50px;
+  }
+
+  .button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+}

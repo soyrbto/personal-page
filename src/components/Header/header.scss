@@ -1,20 +1,8 @@
 .header {
   display: flex;
   align-items: baseline;
-  // justify-content: center;
   position: relative;
-
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   left: 0;
-  //   top: -20px;
-  //   background-color: transparent;
-  //   width: 100vw;
-  //   height: 120vh;
-  //   z-index: 100;
-  // }
+  grid-column: 1 / -1;
 
   .logo {
     z-index: 1000;

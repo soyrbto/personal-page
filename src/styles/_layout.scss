@@ -85,6 +85,10 @@
       justify-self: center;
       align-self: center;
       margin-bottom: 30px;
+
+      .image {
+        border-radius: 50%;
+      }
     }
 
     .schedule {

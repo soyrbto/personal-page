@@ -1,12 +1,15 @@
 .button {
   z-index: 1000;
-  color: var(--color-white);
   grid-column: 1 / -1;
   justify-self: center;
   border-radius: 43px;
   border: none;
   padding: clamp(12px, 8.7vw, 14px) 40px;
   background: linear-gradient(92.34deg, #ed4c5c 5.25%, #fab01c 95.46%);
+
+  a {
+    color: white;
+  }
 
   @media only screen and (min-width: $tablet-small) {
     & {
